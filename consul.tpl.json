@@ -1,0 +1,17 @@
+{
+    "data_dir": "/tmp/consul",
+    "datacenter": "${CONSUL_DC}",
+    "ports": {
+        "dns": -1
+    },
+    "service": {
+        "name": "${CONSUL_SERVICE_NAME:-grafana}",
+        "tags": [ "http", "http:${HTTP_HOST}" ],
+        "port": 3000,
+        "check": {
+            "name": "http connection check on port 3000",
+            "http": "http://localhost:3000",
+            "interval": "10s"
+        }
+    }
+}

@@ -10,7 +10,7 @@ Base image: [grafana/grafana](https://hub.docker.com/r/grafana/grafana)
 
 Additional available envs:
 
-- CONSUL_HOST
+- CONSUL_JOIN
 - CONSUL_DC
-- CONSUL_DOMAIN
 - CONSUL_SERVICE_NAME
+- HTTP_HOST
