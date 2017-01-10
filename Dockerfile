@@ -1,4 +1,4 @@
-FROM grafana/grafana:4.0.0-beta2
+FROM grafana/grafana:latest
 
 ENV CONSUL_VERSION 0.7.0
 
